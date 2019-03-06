@@ -7,13 +7,26 @@
   </head>
   <body>
     <h1>Which product is the winner?</h1>
-    <img src="https://m.maccosmetics.com/media/export/cms/products/280x320/mac_sku_M0N904_280x320_0.jpg"
   <div class="inputSection">
     <div class="inputs">
         <input placeholder="Insert text here"></input>
     </div>
     <button class="addOption">Add</button>
   </div>
+  <div class="resultSection"></div>
     <button>Go</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+    })
+    </script>
   </body>
 </html>
