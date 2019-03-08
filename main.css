@@ -36,6 +36,10 @@ input {
   margin-top: 10px;
 }
 
-button {
-  background-color: "pink";
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
